@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Website Design</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="logo">Creative</div>
+        <img src="images/bg.jpg" alt="" class="bg">
+        <div class="content">
+            <h2>Let's make<br>Something Creative</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eos reprehenderit dolor unde aliquid sapiente beatae cumque velit facere dolores quia voluptatum fugiat delectus nihil, tempore ea quibusdam, temporibus ratione.</p>
+            <a href="">Get Started</a>
+        </div>
+        <p class="copyrightText">@2020. Dev EVA works</p>
+    </section>
+    <div class="menuToggle"></div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li><a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook link"></a></li>
+                <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter link"></a></li>
+                <li><a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram link"></a></li>
+            </ul>
+            <a href="mailto:mymail@gmail.com" class="emailBx"><img src="images/email.png"></a>
+        </div>
+    </div>
+    <script>
+        var menuToggle = document.querySelector(".menuToggle"),
+            navigation = document.querySelector(".navigation");
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            let target = e.target;
+            target.classList.toggle('active');
+            navigation.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
